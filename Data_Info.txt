@@ -1,0 +1,29 @@
+﻿
+
+The Location:
+Scarborough is a popular destination for new immigrants in Canada to reside. As a result, it is one of the most diverse and multicultural areas in the Greater Toronto Area, being home to various religious groups and places of worship.
+
+Longitude and Latitude Data:
+
+We will require geo-location  information about that specific borough and the neighbourhoods in that borough. It is "Scarborough" in Toronto. This project will require knowledge of the different
+neighbourhoods in Toronto, school ratings and median house prices. As such the neighbourhood data required will be:
+  - Neighbourhood location in terms of latitude and longitude
+  - School Ratings
+- Median House Prices
+
+Dataset comprising latitude and longitude, zip codes is already available through the previous notebook. The location of Scarborough would be filtered using the same
+
+
+Foursquare API Data:
+
+We will need data about different venues in different neighbourhoods of that specific borough. In order to gain that information we will use "Foursquare" locational information. Foursquare is a location data provider with information about all manner of venues and events within an area of interest. Such information includes venue names, locations, menus and even photos. As such, the foursquare location platform will be used as the sole data source since all the stated required information can be obtained through the API. After finding the list of neighbourhoods, we then connect to the Foursquare API to gather information about venues inside each and every neighbourhood. For each neighbourhood, we have chosen the radius to be 100 meter.
+The data retrieved from Foursquare contained information of venues within a specified distance of the longitude and latitude of the postcodes. The information obtained per venue as follows:
+
+  - Neighbourhood
+  - Neighbourhood Latitude
+  - Neighbourhood Longitude
+  - Venue
+  - Name of the venue e.g. the name of a store or restaurant
+  - Venue Latitude
+  - Venue Longitude
+  - Venue Category
